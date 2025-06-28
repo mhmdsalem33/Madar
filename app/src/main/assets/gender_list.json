@@ -1,0 +1,12 @@
+[
+  {
+    "id" : 1,
+    "genderType": "Male",
+    "emoji": "\uD83D\uDC66"
+  },
+  {
+    "id" : 2,
+    "genderType": "Female",
+    "emoji": "\uD83E\uDDD2"
+  }
+]

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <!-- start user name -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CustomTextViewStyle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            style="@style/CustomTextViewStyle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            tools:text="Mohamed Salem" />
+
+    </LinearLayout>
+    <!-- end user name -->
+
+    <!-- start user age -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CustomTextViewStyle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:text="@string/age" />
+
+        <TextView
+            android:id="@+id/tv_user_age"
+            style="@style/CustomTextViewStyle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            tools:text="28 years old" />
+
+    </LinearLayout>
+    <!-- end user age -->
+
+
+    <!-- start user job title -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CustomTextViewStyle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:text="Job Title :" />
+
+        <TextView
+            android:id="@+id/tv_user_job_title"
+            style="@style/CustomTextViewStyle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            tools:text="Android Developer" />
+
+    </LinearLayout>
+    <!-- end user job title -->
+
+
+    <!-- start user gender -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CustomTextViewStyle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:text="@string/gender" />
+
+        <TextView
+            android:id="@+id/tv_user_gender"
+            style="@style/CustomTextViewStyle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            tools:text="Male  \uD83D\uDC66" />
+
+    </LinearLayout>
+    <!-- start user gender -->
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+
+</LinearLayout>

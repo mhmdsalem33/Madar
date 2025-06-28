@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.ui.xml.fragments.add_user.AddUserFragment"
+    android:background="@color/white"
+    >
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        android:layout_marginTop="@dimen/_20sdp"
+        >
+
+        <!--  Start User Name Edit -->
+
+        <EditText
+            android:id="@+id/nameEdit"
+            style="@style/CustomEditTextStyle_One"
+            android:hint="@string/enter_your_name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+
+            />
+
+        <!--  End User Name Edit -->
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_10sdp"
+            />
+
+        <!--  Start User Age  Edit -->
+
+        <EditText
+            android:id="@+id/ageEdit"
+            style="@style/CustomEditTextStyle_One"
+            android:hint="@string/enter_your_age"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            />
+
+        <!--  End User Age  Edit -->
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_10sdp"
+            />
+
+        <!--  Start job title Edit -->
+
+        <EditText
+            android:id="@+id/jobTitleEdit"
+            style="@style/CustomEditTextStyle_One"
+            android:hint="@string/job_title"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+
+            />
+
+        <!--  End job title Edit -->
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_10sdp"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_view_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_gender"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/layout_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="0dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_gender_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gender_must_be_selected"
+        android:textColor="#FF0000"
+        android:fontFamily="@font/popins_regular"
+        app:layout_constraintTop_toBottomOf="@+id/rec_view_gender"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:visibility="gone"
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/save"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/bg_rounded_12sdp_blue_transparent"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gender_error"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            style="@style/text1"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/compose_activity"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/bg_rounded_12sdp_blue_transparent"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@+id/save"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compose Example"
+            style="@style/text1"
+            />
+    </LinearLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:indeterminateDrawable="@drawable/bg_blue_progress_bar"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:layout_constraintTop_toBottomOf="@+id/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
