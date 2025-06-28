@@ -25,3 +25,11 @@ This is a simple Android app demonstrating the use of both **Jetpack Compose** a
 | **Utilities** | kotlinx.serialization, Intuit SDP/SSP |
 
 ---
+
+## 📲 Download App
+
+Click the button below to download the latest **Debug APK** of the project:
+
+[![Download](https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android)](https://github.com/mhmdsalem33/Madar/raw/main/apk/app-debug.apk)
+
+> 📌 This is a debug build for testing purposes only.
